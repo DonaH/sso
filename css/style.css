@@ -1,0 +1,30 @@
+html,
+body{
+  margin:0;
+  padding:0;
+  height: 100vh;
+  background: ##00609c;
+  /* background: ##0084BD; */
+}
+#particles-js {
+  height: 100%;
+  /* background: #00609c; */
+  /* background: ##0084BD; */
+}
+
+.panel {
+    font-family: 'myriad-pro', 'PT Sans', sans-serif;
+    /* font-size: 1.3em; */
+    position: absolute;
+    z-index: 10;
+    width: 600px;
+    height: 374px;
+    background: #eeeeeea3;
+    top: 50%;
+    left: 50%;
+    margin: -110px 0 0 -180px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    z-index: 100;
+}

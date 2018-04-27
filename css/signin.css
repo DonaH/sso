@@ -1,0 +1,88 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #00609c;
+  font-family: "Myriad-pro", sans-serif;
+}
+
+html,
+body{
+  margin:0;
+  padding:0;
+  height: 100vh;
+  background: radial-gradient(#0690cf, #00609c);
+  font-family: "Myriad-pro", sans-serif, 'PT Sans';
+}
+
+.form-signin {
+  max-width: 360px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 0;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  /* border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; */
+  border-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  /* border-top-left-radius: 0;
+  border-top-right-radius: 0; */
+  border-radius: 0;
+}
+h5 {
+  color: #ffffff;
+}
+
+
+html,
+body{
+  margin:0;
+  padding:0;
+  height: 100vh;
+  background: radial-gradient(#0690cf, #00609c);
+}
+
+#particles-js {
+  height: 100%;
+  background-color: inherit;
+}
+
+.panel {
+    font-family: 'myriad-pro', 'PT Sans', sans-serif;
+    /* font-size: 1.3em; */
+    position: absolute;
+    /* z-index: 10; */
+    width: 600px;
+    height: 374px;
+    background: #eeeeeea3;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -180px;
+    padding: 20px;
+    border-radius: 0;
+    box-sizing: border-box;
+    z-index: 100;
+}

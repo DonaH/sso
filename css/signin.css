@@ -4,6 +4,13 @@ body {
   background-color: #00609c;
   font-family: "Myriad-pro", sans-serif;
 }
+@@font-face {
+    font-family: "myriad-pro";
+    src: "../assets/MyriadPro-Light.woff" format("Web Open Font Format");
+}
+p.customfont {
+    font-family: "myriad-pro", sans-serif;
+}
 
 html,
 body{
@@ -11,7 +18,7 @@ body{
   padding:0;
   height: 100vh;
   background: radial-gradient(#0690cf, #00609c);
-  font-family: "Myriad-pro", sans-serif, 'PT Sans';
+  font-family: "myriad-pro", sans-serif, 'PT Sans';
 }
 
 .form-signin {
@@ -21,7 +28,8 @@ body{
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
-  margin-bottom: 10px;
+  margin-top: 2px;
+  margin-bottom: 9px;
   text-align: center;
 }
 .form-signin .checkbox {
@@ -53,7 +61,8 @@ body{
   border-radius: 0;
 }
 h5 {
-  color: #ffffff;
+  color: #000000;
+  text-align: center;
 }
 
 
@@ -76,7 +85,7 @@ body{
     position: absolute;
     /* z-index: 10; */
     width: 600px;
-    height: 374px;
+    height: 386px;
     background: #eeeeeea3;
     top: 50%;
     left: 50%;

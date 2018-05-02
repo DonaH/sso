@@ -1,17 +1,17 @@
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #00609c;
-  font-family: "Myriad-pro", sans-serif;
-}
 @@font-face {
     font-family: "myriad-pro";
     src: "../assets/MyriadPro-Light.woff" format("Web Open Font Format");
 }
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #00609c;
+  min-width: 482px;
+  font-family: "myriad-pro", sans-serif;
+}
 p.customfont {
     font-family: "myriad-pro", sans-serif;
 }
-
 html,
 body{
   margin:0;
@@ -20,7 +20,6 @@ body{
   background: radial-gradient(#0690cf, #00609c);
   font-family: "myriad-pro", sans-serif, 'PT Sans';
 }
-
 .form-signin {
   max-width: 360px;
   padding: 15px;
@@ -65,16 +64,6 @@ h5 {
   color: #000000;
   text-align: center;
 }
-
-
-html,
-body{
-  margin:0;
-  padding:0;
-  height: 100vh;
-  background: radial-gradient(#0690cf, #00609c);
-}
-
 #particles-js {
   height: 100%;
   background-color: inherit;
@@ -88,11 +77,37 @@ body{
     width: 600px;
     height: 386px;
     background: #eeeeeea3;
-    top: 50%;
+    /* background: transparent; */
+    top: 55%;
     left: 50%;
     margin: -150px 0 0 -180px;
     padding: 20px;
     border-radius: 0;
     box-sizing: border-box;
     z-index: 100;
+}
+.panel_base{
+    font-family: 'myriad-pro', 'PT Sans', sans-serif;
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    /* min-width: 482px; */
+    /* background: #00882e; */
+    background: transparent;
+    top: 10%;
+    left: 25%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0;
+    box-sizing: border-box;
+    z-index: 200;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 100;
+    color: #ffffff;
+    /* display: block; */
+    /* margin: 5px auto; */
 }

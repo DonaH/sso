@@ -1,6 +1,8 @@
-@@font-face {
+@font-face {
     font-family: "MyriadPro-Light";
-    src: "../assets/MyriadPro-Light.woff" format("Web Open Font Format");
+    src: url("../assets/MyriadPro-Light.woff") format("woff");
+    font-family: "MyriadPro";
+    src: url("../assets/MyriadPro-Regular.woff") format("woff");
 }
 p.customfont {
     font-family: "MyriadPro-Light", sans-serif;
@@ -59,6 +61,7 @@ h5 {
 h3 {
     font-size: 22px;
     font-weight: 100;
+    font-family: 'MyriadPro-Light';
     color: #ffffff;
     margin: 5px auto;
 }

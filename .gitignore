@@ -1,2 +1,3 @@
 # ignore folder of node recursively
 node_modules/
+assets-unused/

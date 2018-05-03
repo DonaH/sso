@@ -1,24 +1,19 @@
 @@font-face {
-    font-family: "myriad-pro";
+    font-family: "MyriadPro-Light";
     src: "../assets/MyriadPro-Light.woff" format("Web Open Font Format");
 }
-body {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #00609c;
-  min-width: 482px;
-  font-family: "myriad-pro", sans-serif;
-}
 p.customfont {
-    font-family: "myriad-pro", sans-serif;
+    font-family: "MyriadPro-Light", sans-serif;
 }
-html,
+html
 body{
   margin:0;
-  padding:0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   height: 100vh;
+  min-width: 482px;
   background: radial-gradient(#0690cf, #00609c);
-  font-family: "myriad-pro", sans-serif, 'PT Sans';
+  font-family: "MyriadPro-Light", 'PT Sans', sans-serif;
 }
 .form-signin {
   max-width: 360px;
@@ -50,13 +45,10 @@ body{
 }
 .form-signin input[type="email"] {
   margin-bottom: -1px;
-  /* border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; */
   border-radius: 0;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  /* border-top-left-radius: 0;
   border-top-right-radius: 0; */
   border-radius: 0;
 }
@@ -64,50 +56,50 @@ h5 {
   color: #000000;
   text-align: center;
 }
+h3 {
+    font-size: 22px;
+    font-weight: 100;
+    color: #ffffff;
+    margin: 5px auto;
+}
+hr {
+    background-color: #377BB5;
+    width: 360px;
+    margin-left: -21px;
+    border-color: #377BB5;
+    height: 12px;
+    noshade;
+}
 #particles-js {
   height: 100%;
   background-color: inherit;
 }
-
 .panel {
-    font-family: 'myriad-pro', 'PT Sans', sans-serif;
-    /* font-size: 1.3em; */
-    position: absolute;
-    /* z-index: 10; */
+    font-family: 'MyriadPro-Light', 'PT Sans', sans-serif;
     width: 600px;
-    height: 386px;
+    height: 400px;
     background: #eeeeeea3;
-    /* background: transparent; */
     top: 55%;
     left: 50%;
-    margin: -150px 0 0 -180px;
     padding: 20px;
     border-radius: 0;
     box-sizing: border-box;
     z-index: 100;
 }
 .panel_base{
-    font-family: 'myriad-pro', 'PT Sans', sans-serif;
+    font-family: 'MyriadPro-Light', 'PT Sans', sans-serif;
+    font-weight: 100;
     text-align: center;
-    vertical-align: top;
+    vertical-align: center;
     position: absolute;
-    width: 600px;
-    height: 600px;
-    /* min-width: 482px; */
-    /* background: #00882e; */
+    width: 496px;
+    height: 570px;
     background: transparent;
     top: 10%;
-    left: 25%;
+    left: 33%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 0;
     box-sizing: border-box;
     z-index: 200;
-}
-h3 {
-    font-size: 22px;
-    font-weight: 100;
-    color: #ffffff;
-    /* display: block; */
-    /* margin: 5px auto; */
 }

@@ -27,8 +27,6 @@ particlesJS('particles-js',
       },
       "image": {
         "src": "assets/soundwaves3_offwht.png",
-        // "src": "assets/swoosh_offwht.png",
-        // "src": "assets/swoosh_blue.png",
         "width": 100,
         "height": 100
       }
@@ -45,8 +43,6 @@ particlesJS('particles-js',
     },
     "size": {
       "value": 4,
-      // "value": 12,
-      // "value": 18,
       "random": true,
       "anim": {
         "enable": false,

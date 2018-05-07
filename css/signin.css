@@ -13,7 +13,8 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100vh;
-  min-width: 482px;
+  /* min-width: 482px; */
+  width: 100%;
   background: radial-gradient(#0690cf, #00609c);
   font-family: "MyriadPro-Light", 'PT Sans', sans-serif;
 }
@@ -95,26 +96,33 @@ hr {
     text-align: center;
     vertical-align: center;
     position: absolute;
+    /* position: relative; */
     width: 496px;
     height: 570px;
     background: transparent;
-    top: 10%;
-    left: 33%;
+    /* background: #025700; */
+    /* top: 10%; */
+    top: calc(33% - 160px);
+    left: calc(50% - 250px);
+    /* left: 33%; */
     margin: auto;
     padding: 10px;
     border-radius: 0;
     box-sizing: border-box;
     z-index: 200;
 }
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-  .panel_base {
-    left: 20%;
-  }
+img {
+    height: 160px;
 }
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .panel_base {
-      left: -3%;
+/* On screens that are less than 480px, shrink width & height to 80% */
+@media screen and (max-width: 479px) {
+  .panel_base {
+      width: 80%;
+      height: 80%;
+      top: calc(33% - 160px);
+      left: calc(50% - 188px);
+  }
+  img {
+      height: 128px;
   }
 }

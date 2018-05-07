@@ -13,7 +13,6 @@ body{
   padding-top: 20px;
   padding-bottom: 20px;
   height: 100vh;
-  /* min-width: 482px; */
   width: 100%;
   background: radial-gradient(#0690cf, #00609c);
   font-family: "MyriadPro-Light", 'PT Sans', sans-serif;
@@ -96,15 +95,11 @@ hr {
     text-align: center;
     vertical-align: center;
     position: absolute;
-    /* position: relative; */
     width: 496px;
     height: 570px;
     background: transparent;
-    /* background: #025700; */
-    /* top: 10%; */
     top: calc(33% - 160px);
     left: calc(50% - 250px);
-    /* left: 33%; */
     margin: auto;
     padding: 10px;
     border-radius: 0;

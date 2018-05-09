@@ -1,0 +1,37 @@
+@font-face {
+    font-family: "MyriadPro";
+    font-weight: 100;
+    src: url("../assets/MyriadPro-Light.woff") format("woff");
+    font-family: "MyriadPro";
+    src: url("../assets/MyriadPro-Regular.woff") format("woff");
+}
+p.customfont {
+    font-family: "MyriadPro", sans-serif;
+}
+html
+body{
+  margin:0;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(#0690cf, #00609c);
+  font-family: "MyriadPro", 'PT Sans', sans-serif;
+}
+
+}
+/* On screens that are less than 480px, shrink width & height to 80% */
+@media screen and (max-width: 479px) {
+  /* .panel_base {
+      width: 80%;
+      height: 80%;
+      top: calc(33% - 160px);
+      left: calc(50% - 188px);
+  } */
+  img {
+      height: 128px;
+  }
+}
+#sidebar-wrapper.active {
+    background-color: #0090d0;
+}

@@ -1,8 +1,8 @@
 @font-face {
     font-family: "MyriadPro-Light";
-    src: url("../assets/MyriadPro-Light.woff") format("woff");
+    src: url("fonts/MyriadPro-Light.woff") format("woff");
     font-family: "MyriadPro";
-    src: url("../assets/MyriadPro-Regular.woff") format("woff");
+    src: url("fonts/MyriadPro-Regular.woff") format("woff");
 }
 p.customfont {
     font-family: "MyriadPro-Light", sans-serif;

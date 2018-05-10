@@ -1,9 +1,9 @@
 @font-face {
-    font-family: "MyriadPro";
+    font-family: "MyriadPro-Light";
     font-weight: 100;
-    src: url("../assets/MyriadPro-Light.woff") format("woff");
+    src: url("fonts/MyriadPro-Light.woff") format("woff");
     font-family: "MyriadPro";
-    src: url("../assets/MyriadPro-Regular.woff") format("woff");
+    src: url("fonts/MyriadPro-Regular.woff") format("woff");
 }
 p.customfont {
     font-family: "MyriadPro", sans-serif;
@@ -16,7 +16,7 @@ body{
   height: 100vh;
   width: 100%;
   background: radial-gradient(#0690cf, #00609c);
-  font-family: "MyriadPro", 'PT Sans', sans-serif;
+  font-family: "MyriadPro-Light", 'PT Sans', sans-serif;
 }
 
 }

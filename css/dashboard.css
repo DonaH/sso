@@ -18,20 +18,26 @@ body{
   background: radial-gradient(#0690cf, #00609c);
   font-family: "MyriadPro-Light", 'PT Sans', sans-serif;
 }
-
+.content-section  {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
-/* On screens that are less than 480px, shrink width & height to 80% */
-@media screen and (max-width: 479px) {
-  /* .panel_base {
-      width: 80%;
-      height: 80%;
-      top: calc(33% - 160px);
-      left: calc(50% - 188px);
-  } */
-  img {
-      height: 128px;
+#logo-tag {
+    height: 160px;
+}
+
+/* On screens that are less than 500px, shrink width & height to 80% */
+@media screen and (max-width: 499px) {
+  #logo-tag {
+      content: url("../assets/SonoSim_Logo_white.png");
+      height: 90px;
+  }
+  section.content-section  {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
   }
 }
+
 #sidebar-wrapper.active {
     background-color: #0090d0;
 }

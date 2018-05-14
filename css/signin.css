@@ -112,7 +112,7 @@ img {
 /* On screens that are less than 480px, shrink width & height to 80% */
 @media screen and (max-width: 479px) {
   .panel_base {
-      width: 80%;
+      width: 79%;
       height: 80%;
       top: calc(33% - 160px);
       left: calc(50% - 188px);

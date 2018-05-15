@@ -68,12 +68,46 @@ body{
 #logo-tag {
     height: 160px;
 }
+#logo-tag2 {
+    height: 100px;
+}
+h3 {
+    /* color: #D1E6F2; */
+    color: #90D0F0;
+    font-family: "Myriad Pro";
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 100;
+    padding-top: 0.5em;
+
+}
 
 /* On screens that are less than 500px, shrink width & height to 80% */
 @media screen and (max-width: 499px) {
-  #logo-tag {
+  /* #logo-tag {
       content: url("../assets/SonoSim_Logo_white.png");
       height: 90px;
+  } */
+  #logo-tag2 {
+      content: url("../assets/SonoSim_Logo_white.png");
+      height: 90px;
+  }
+  h3 {
+      display: none;
+  }
+  section.content-section  {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+}
+
+/* On screens that are less than 768px, shrink width & height to 80% */
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  #logo-tag2 {
+      height: 90px;
+  }
+  h3 {
+      font-size: 20px;
   }
   section.content-section  {
       padding-top: 1rem;

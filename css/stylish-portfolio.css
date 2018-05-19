@@ -321,8 +321,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-    color: #F4FF70;
-  /* color: #fff000; */
+    color: #FFFFFF;
 }
 
 .btn-primary {

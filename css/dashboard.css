@@ -5,6 +5,7 @@
         url('fonts/MyriadPro-Regular.woff2') format('woff2'),
         url('fonts/MyriadPro-Regular.woff') format('woff'),
         url('fonts/MyriadPro-Regular.ttf') format('truetype'),
+        url('fonts/MyriadPro-Regular.otf') format('opentype'),
         url('fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -17,6 +18,7 @@
         url('fonts/MyriadPro-Bold.woff2') format('woff2'),
         url('fonts/MyriadPro-Bold.woff') format('woff'),
         url('fonts/MyriadPro-Bold.ttf') format('truetype'),
+        url('fonts/MyriadPro-Bold.otf') format('opentype'),
         url('fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
@@ -29,24 +31,26 @@
         url('fonts/MyriadPro-Semibold.woff2') format('woff2'),
         url('fonts/MyriadPro-Semibold.woff') format('woff'),
         url('fonts/MyriadPro-Semibold.ttf') format('truetype'),
+        url('fonts/MyriadPro-Semibold.otf') format('opentype'),
         url('fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Myriad Pro';
+    font-family: 'Myriad Pro Light';
     src: url('fonts/MyriadPro-Light.eot');
     src: url('fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
         url('fonts/MyriadPro-Light.woff2') format('woff2'),
         url('fonts/MyriadPro-Light.woff') format('woff'),
         url('fonts/MyriadPro-Light.ttf') format('truetype'),
+        url('fonts/MyriadPro-Light.otf') format('opentype'),
         url('fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 p.customfont {
-    font-family: "Myriad Pro", sans-serif;
+    font-family:"Myriad Pro Light", "Myriad Pro", sans-serif;
 }
 html
 body{
@@ -56,8 +60,8 @@ body{
   height: 100vh;
   width: 100%;
   background: radial-gradient(#0690cf, #00609c);
-  font-family: "Myriad Pro", sans-serif;
-  font-weight: 300;
+  font-family: "Myriad Pro Light", "Myriad Pro", sans-serif;
+  font-weight: 100;
   font-style: normal;
   font-size: 19px;
 }
@@ -66,28 +70,20 @@ body{
     padding-bottom: 6rem;
 }
 #logo-tag {
-    height: 160px;
-}
-#logo-tag2 {
     height: 100px;
 }
 h3 {
-    /* color: #D1E6F2; */
     color: #90D0F0;
-    font-family: "Myriad Pro";
-    font-style: normal;
-    font-size: 32px;
+    font-family: "Myriad Pro Light";
     font-weight: 100;
+    font-style: normal;
+    font-size: 29px;
     padding-top: 0.5em;
 
 }
 
 /* On screens that are less than 500px, shrink width & height to 80% */
 @media screen and (max-width: 499px) {
-  /* #logo-tag {
-      content: url("../assets/SonoSim_Logo_white.png");
-      height: 90px;
-  } */
   #logo-tag2 {
       content: url("../assets/SonoSim_Logo_white.png");
       height: 90px;
@@ -130,10 +126,7 @@ transition: 0.3s ease;
 }
 
 a:link, a:visited {
-    /* background-color: transparent; */
-    color: white;
-    /* padding: 14px 25px; */
-    /* text-align: center; */
+    color: #dadada;
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease-in;

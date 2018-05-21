@@ -110,6 +110,12 @@ h3 {
       padding-bottom: 1rem;
   }
 }
+@media only screen and (orientation: landscape) and (max-width: 823px) {
+    section.content-section  {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+}
 
 #sidebar-wrapper.active {
     background-color: #0090d0;

@@ -136,7 +136,7 @@ a.btn.btn-lg.btn-primary.btn-block {
 .panel {
     font-family: 'Myriad Pro', sans-serif;
     width: 600px;
-    height: 400px;
+    height: 380px;
     background: #eeeeeea3;
     top: 55%;
     left: 50%;
@@ -165,8 +165,11 @@ a.btn.btn-lg.btn-primary.btn-block {
 img {
     height: 160px;
 }
+#logo-blue {
+    display: none;
+}
 /* On screens that are less than 480px, shrink width & height to 80% */
-@media screen and (max-width: 479px) {
+@media only screen and (orientation: portrait) and (max-width: 479px) {
   .panel_base {
       width: 79%;
       height: 80%;
@@ -177,15 +180,27 @@ img {
       height: 128px;
   }
 }
-@media all
-    and (orientation: landscape) and (min-width: 2px) and (max-width: 479px){
+@media only screen
+    and (orientation: landscape) and (max-width: 823px){
     .panel_base {
-        width: 79%;
-        height: 80%;
-        top: calc(15% - 160px);
+        width: 50%;
+        height: 50%;
+        top: calc(33% - 129px);
         left: calc(50% - 188px);
     }
-    img {
-        height: 128px;
+    #logo-tag2 {
+        display: none;
+    }
+    h4 {
+        display: none;
+    }
+    #logo-blue {
+        display: block;
+        height: 48px;
+        padding-left: 100px;
+        padding-bottom: 5px;
+    }
+    .panel {
+        height: 366px;
     }
 }

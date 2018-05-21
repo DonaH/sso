@@ -180,6 +180,7 @@ img {
       height: 128px;
   }
 }
+/* On screens that are landscape and less that 824px, switch logo */
 @media only screen
     and (orientation: landscape) and (max-width: 823px){
     .panel_base {

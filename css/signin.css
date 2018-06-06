@@ -162,6 +162,16 @@ a.btn.btn-lg.btn-primary.btn-block {
     box-sizing: border-box;
     z-index: 200;
 }
+.lostpw-msg {
+    font-size: 17px;
+}
+.lostpw-height {
+    height: 290px;
+}
+a:hover {
+    color: #23527c;
+    text-decoration: none;
+}
 img {
     height: 160px;
 }

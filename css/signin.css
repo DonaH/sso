@@ -162,10 +162,10 @@ a.btn.btn-lg.btn-primary.btn-block {
     box-sizing: border-box;
     z-index: 200;
 }
-.lostpw-msg {
+p.lostpw-msg {
     font-size: 17px;
 }
-.lostpw-height {
+form.form-signin.panel.lostpw-height {
     height: 290px;
 }
 a:hover {

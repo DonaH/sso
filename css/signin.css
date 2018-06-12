@@ -136,7 +136,7 @@ a.btn.btn-lg.btn-primary.btn-block {
 .panel {
     font-family: 'Myriad Pro', sans-serif;
     width: 600px;
-    height: 364px;
+    height: 340px;
     background: #eeeeeea3;
     top: 55%;
     left: 50%;
@@ -177,6 +177,16 @@ img {
 }
 #logo-blue {
     display: none;
+}
+a#webstore {
+    font-size: 1.3em;
+    font-weight: 100;
+    color: #333;
+}
+a#dashboard {
+    font-size: 1.3em;
+    font-weight: 100;
+    color: #333;
 }
 /* On screens that are less than 480px, shrink width & height to 80% */
 @media only screen and (orientation: portrait) and (max-width: 479px) {

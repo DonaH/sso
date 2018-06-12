@@ -27,12 +27,12 @@
   <!-- <div id="particles-js"> -->
     <div class="container-fluid">
       <div class="row">
-            <div class="panel_base">
+            <div class="panel_base" id="dashboard-login">
                 <img id="logo-tag2" src="assets/sonosim_lg_logo_tag.png" srcset="assets/sonosim_lg_logo_tag.svg" alt="SonoSim Logo">
 
                 <form class="form-signin panel">
-                  <h4 class="form-signin-heading">Welcome!</h4>
-                  <img id="logo-blue" src="assets/sonosim_logo_blue.png">
+                  <h4 class="form-signin-heading">SonoSim Dashboard</h4>
+                  <img id="logo-blue" src="assets/sonosim_logo_blue.png"> <!-- Logo for mobile -->
                   <label for="inputEmail" class="sr-only">Email address</label>
                   <input type="text" id="inputUsername" class="form-control" placeholder="Username*" required autofocus>
                   <label for="inputPassword" class="sr-only">Password*</label>
@@ -43,18 +43,43 @@
                           <a style="color:#666666;" href="https://dev.sonosim.com/wp-content/sso/lostpw.php"<h5>Lost your password?</h5></a>
                       </span>
                   </p>
-                  <a href="https://dev.sonosim.com/wp-content/sso/dashboard.php" class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="tooltip" title="For Accessing Training Modules: Course Library | Performance Tracker | CaseBuilder">
-                      My SonoSim Dashboard
+                  <a href="#" class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="tooltip" title="For Accessing Training Modules: Course Library | Performance Tracker | CaseBuilder">
+                      Log in
                   </a>
-                  <hr>
-                  <h4>Access to Account Details</h4>
-                  <a href="https://sonosim.com/my-account/" class="btn btn-lg btn-primary btn-block" type="submit"  data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions">My SonoSim Webstore</a>
+                  <hr />
+                  <a id="webstore" href="#" class="btn btn-lg btn-primary btn-block" type="submit"  data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions">SonoSim Webstore</a>
                 </form>
             </div>
         <!-- </div> -->
-
       </div><!-- /row -->
 
+      <div class="row">
+            <div class="panel_base" id="webstore-login">
+                <img id="logo-tag2" src="assets/sonosim_lg_logo_tag.png" srcset="assets/sonosim_lg_logo_tag.svg" alt="SonoSim Logo">
+
+                <form class="form-signin panel">
+                  <a id="dashboard" href="#" class="btn btn-lg btn-primary btn-block" type="submit"  data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions">SonoSim Dashboard</a>
+                  <hr />
+
+                  <h4 class="form-signin-heading">SonoSim Webstore</h4>
+                  <img id="logo-blue" src="assets/sonosim_logo_blue.png"> <!-- Logo for mobile -->
+                  <label for="inputEmail" class="sr-only">Email address</label>
+                  <input type="text" id="inputUsername" class="form-control" placeholder="Username*" required autofocus>
+                  <label for="inputPassword" class="sr-only">Password*</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password*" required>
+                  <p style="text-align:left">
+                    <span><input type="checkbox" value="remember-me"> Remember me</span>
+                      <span style="float:right;" >
+                          <a style="color:#666666;" href="https://dev.sonosim.com/wp-content/sso/lostpw.php"<h5>Lost your password?</h5></a>
+                      </span>
+                  </p>
+                  <a href="#" class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="tooltip" title="For Accessing Training Modules: Course Library | Performance Tracker | CaseBuilder">
+                      Log in
+                  </a>
+                </form>
+            </div>
+        <!-- </div> -->
+      </div><!-- /row -->
     </div><!-- /container -->
 
   <!-- </div><! /particles-js -->
@@ -63,8 +88,17 @@
     <script>
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
+        $("#webstore").click(function(){
+            $("#dashboard-login").fadeOut(330);
+            $("#webstore-login").fadeIn(330);
+            });
+        $("#dashboard").click(function(){
+            $("#webstore-login").fadeOut(330);
+            $("#dashboard-login").fadeIn(330);
+            });
     });
     </script>
+
 
 </body>
 

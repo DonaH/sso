@@ -118,14 +118,6 @@ h3 {
     color: #ffffff;
     margin: 5px auto;
 }
-hr {
-    background-color: #377BB5;
-    width: 360px;
-    margin-left: -21px;
-    border-color: #377BB5;
-    height: 28px;
-    noshade;
-}
 .seperator {
     width: 360px;
     height: 28px;
@@ -191,6 +183,7 @@ a#webstore {
     font-size: 1.3em;
     font-weight: 100;
     color: #333;
+    text-decoration: none;
 }
 a#dashboard {
     font-size: 1.3em;

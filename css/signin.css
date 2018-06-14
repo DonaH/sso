@@ -126,6 +126,15 @@ hr {
     height: 28px;
     noshade;
 }
+.seperator {
+    width: 360px;
+    height: 28px;
+    margin-left: -21px;
+    border-color: #377BB5;
+    background-color: #377BB5;
+    text-align: center;
+    padding-top: 4px;
+}
 a.btn.btn-lg.btn-primary.btn-block {
     font-weight: 300;
 }

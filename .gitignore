@@ -1,3 +1,7 @@
 # ignore folder of node recursively
 node_modules/
 assets-unused/
+wp-wc-login.html
+status.txt
+api.json
+notes_bobby.txt

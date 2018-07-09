@@ -1,3 +1,7 @@
+<?php
+// SonoSim® Single Sign On Login Page
+// SSO Login
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +12,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="SonoSim Single Sign On Login">
   <meta name="SonoSim" content="SonoSim&reg; Ultrasound Training">
-  <link rel="icon" href="assets/favicon.ico">
+  <!-- <link rel="icon" href="../../favicon.ico"> -->
 
   <title>SonoSim&reg; Training Dashboard Login</title>
 
@@ -19,6 +23,7 @@
 
   <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -26,27 +31,23 @@
   <!-- <div id="particles-js"> -->
     <div class="container-fluid">
       <div class="row">
-<!-- Dashboard Login Form -->
+          <!-- Dashboard Login Form -->
             <div class="panel_base" id="dashboard-login">
                 <img id="logo-tag2" src="assets/sonosim_lg_logo_tag.png" srcset="assets/sonosim_lg_logo_tag.svg" alt="SonoSim Logo">
 
                 <form class="form-signin panel">
                   <h4 class="form-signin-heading">SonoSim Dashboard</h4>
                   <img id="logo-blue" src="assets/sonosim_logo_blue.png"> <!-- Logo for mobile -->
-<!-- Email -->
-                  <label for="usernameDB" class="sr-only">Username or Email address</label>
-                  <input type="text" id="usernameDB" class="form-control" placeholder="Username or Email*" required autofocus>
-<!-- Password -->
-                  <label for="passwordDB" class="sr-only">Password*</label>
-                  <input type="password" id="passwordDB" class="form-control" placeholder="Password*" required>
+                  <label for="inputEmail" class="sr-only">Email address</label>
+                  <input type="text" id="inputUsernameDB" class="form-control" placeholder="Username*" required autofocus>
+                  <label for="inputPasswordDB" class="sr-only">Password*</label>
+                  <input type="password" id="inputPasswordDB" class="form-control" placeholder="Password*" required>
                   <p style="text-align:left">
                     <span><input type="checkbox" value="remember-me"> Remember me</span>
-<!-- Lost Password -->
                       <span style="float:right;" >
                           <a style="color:#666666;" href="https://dev.sonosim.com/wp-content/sso/lostpw.php"<h5>Lost your password?</h5></a>
                       </span>
                   </p>
-<!-- Dashboard Login Button -->
                   <a href="#" class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="tooltip" title="For Accessing Training Modules: Course Library | Performance Tracker | CaseBuilder">
                       Log in
                   </a>
@@ -62,47 +63,36 @@
       </div><!-- /row -->
 
       <div class="row">
-<!-- Webstore Login Form -->
+          <!-- Webstore Login Form -->
             <div class="panel_base" id="webstore-login">
                 <img id="logo-tag2" src="assets/sonosim_lg_logo_tag.png" srcset="assets/sonosim_lg_logo_tag.svg" alt="SonoSim Logo">
 
-<!-- Post -->     <form class="form-signin panel" method="post">
+                <form class="form-signin panel">
+                    <!-- <a id="dashboard" href="#" class="btn btn-lg btn-primary btn-block" type="submit"  data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions">SonoSim Dashboard</a> -->
                   <div><a id="dashboard" href="#" type="submit"  data-toggle="tooltip" title="For Accessing Training Modules: Course Library | Performance Tracker | CaseBuilder">SonoSim Dashboard</a></div>
                   <br />
                   <div class="seperator">
                       <span style="font-size: 16px; color: #8ccedd; background-color: #377BB5; padding: 0 10px;">Or</span>
                   </div>
+
                   <br /><h4 class="form-signin-heading">SonoSim Webstore</h4>
                   <img id="logo-blue" src="assets/sonosim_logo_blue.png"> <!-- Logo for mobile -->
-<!-- Email -->
-                  <label for="username" class="sr-only">Username or email address</label>
-                  <input type="text" id="username" class="form-control" name="username" value="" placeholder="Username or Email*" required autofocus>
-<!-- Password -->
-                  <label for="password" class="sr-only">Password*</label>
-                  <input type="password" id="password" class="form-control" name="password" placeholder="Password*" required>
-
+                  <label for="inputEmail" class="sr-only">Email address</label>
+                  <input type="text" id="inputUsernameWS" class="form-control" placeholder="Username*" required autofocus>
+                  <label for="inputPasswordWS" class="sr-only">Password*</label>
+                  <input type="password" id="inputPasswordWS" class="form-control" placeholder="Password*" required>
                   <p style="text-align:left">
                     <span><input type="checkbox" value="remember-me"> Remember me</span>
-<!-- Lost Password -->
                       <span style="float:right;" >
-                          <!-- <a style="color:#666666;" href="https://dev.sonosim.com/wp-content/sso/lostpw.php"<h5>Lost your password?</h5></a> -->
-                          <a style="color:#666666;" href="https://dev.sonosim.com/my-account/lost-password/"<h5>Lost your password?</h5></a>
+                          <a style="color:#666666;" href="https://dev.sonosim.com/wp-content/sso/lostpw.php"<h5>Lost your password?</h5></a>
                       </span>
                   </p>
-<!-- Webstore Login Button -->
-                  <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="" />
-                  <input type="hidden" name="_wp_http_referer" value="/my-account/" />
-                  <input type="submit" class="btn btn-lg btn-primary btn-block" name="login" value="Log in" data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions" />
-
-
-                  <!-- <?php echo do_shortcode('[woocommerce_my_account]'); ?> -->
-
-
+                  <a href="#" class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="tooltip" title="For Customers Who Purchased Personal Solutions">
+                      Log in
+                  </a>
                 </form>
             </div>
         <!-- </div> -->
-        <div class="clearboth"></div>
-        </div>
       </div><!-- /row -->
     </div><!-- /container -->
 

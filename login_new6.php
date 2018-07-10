@@ -12,8 +12,8 @@ function login($username,$password,$remember=false)
 
     $user = wp_signon($credentials, false);
 
-    if (is_wp_error($loginResult)) {
-        echo "Invalid login details";
+    if (is_wp_error($user)) {
+        echo $user->get_error_message();
     } else {
         //header("Location: /my-account");
           do_action('wp_login', $user->user_login, $user);
